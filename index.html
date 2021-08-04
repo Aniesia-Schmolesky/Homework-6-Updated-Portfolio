@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href=".style.css" />
+    <title>Aniesia Schmolesky's Portfolio</title>
+</head>
+<header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg img="./images/Icon.JPG" fill="none"stroke="currentColor"stroke-linecap="round" stroke-linejoin="round"stroke-width="2" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <a href="#"><span class="icon"></span><i class="fa fa-angle-left pull-right"></i>
+            <style>
+                .icon {
+            background: url("images/Icon.JPG");
+            height: 40px;
+            width: 40px;
+            display: block;
+        }
+        header {
+            background-color: #6dabdd;
+        }
+      </style>
+      <a>
+        <span class="ml-3 text-xl">AS Web Development</span> 
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900" href="./documents/Resume.pdf">Resume</a>
+        <a class="mr-5 hover:text-gray-900" href="#Quiz">JavaScript Quiz</a>
+        <a class="mr-5 hover:text-gray-900" href="#Inspiration-Station">Inspiration Station</a>
+        <a class="mr-5 hover:text-gray-900" href="#pw-generator">Password Generator</a>
+      </nav>
+      <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+<body>
+    <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
+            <img class="object-cover object-center rounded" alt="hero" src="./images/Profile-image.JPG">
+          </div>
+          <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Aniesia Schmolesky
+            </h1>
+            <h1 class="title-font sm:text-2xl text-1xl mb-4 font-medium text-white">Full-Stack Web Development Student
+            </h1>
+            <p class="mb-8 leading-relaxed">I'm studying full-stack web development at UCSD extension. I'm currently working as a Data Entry Associate with a background in shipping & receiving, as well as accessioning in a CAPA/CLIA regulated clinical trial laboratory. I'm studying web development to learn about data science and improve user experience in laboratory inventory management systems.</p>
+            <div class="flex justify-center">
+                <button id="LinkedIn" class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">LinkedIn</button>
+                <script type="text/javascript">
+                    document.getElementById("LinkedIn").onclick = function () {
+                        location.href = "https://www.linkedin.com/in/aniesia-schmolesky-25b08814a/";
+                    };
+                </script>
+                <button id="GitHub" class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">GitHub</button>
+                <script type="text/javascript">
+                    document.getElementById("GitHub").onclick = function () {
+                        location.href = "https://github.com/Aniesia-Schmolesky";
+                    };
+                </script>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col">
+            <div class="h-1 bg-gray-800 rounded overflow-hidden">
+              <div class="w-24 h-full bg-blue-500"></div>
+            </div>
+            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+              <h1 class="sm:w-2/5 text-white font-medium title-font text-2xl mb-2 sm:mb-0">My Web Development Projects</h1>
+              <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Here you will find the projects and assignments that I have completed to showcase my capabilities as a developer. </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-full w-full" src="./images/JS-Quiz.png">
+              </div>
+              <h2 class="text-xl font-medium title-font text-white mt-5">Java Script Quiz</h2>
+              <p class="text-base leading-relaxed mt-2">Test your JavaScript knowledge with this JS quiz. You can use it to practice your own knowledge or to compete with your classmates, either way it's a fun, interactive way to study!</p>
+              <a id="Quiz" class="text-blue-400 inline-flex items-center mt-3">Try it out!
+                <script type="text/javascript">
+                  document.getElementById("Quiz").onclick = function () {
+                      location.href = "https://aniesia-schmolesky.github.io/JS-Quiz-Homework-4/";
+                  };
+              </script>
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-full w-full" src="./images/Group-Project.png">
+              </div>
+              <h2 class="text-xl font-medium title-font text-white mt-5">Inspiration Station</h2>
+              <p class="text-base leading-relaxed mt-2">Here is a website to really inspire you when you need it the most, or at the very least will give you a good laugh. Inpiration Station generates images to a variety of quotes. </p>
+              <a id="Inspiration-Station" class="text-blue-400 inline-flex items-center mt-3">Try it out!
+                <script type="text/javascript">
+                  document.getElementById("Inspiration-Station").onclick = function () {
+                      location.href = "https://joeyfitz.github.io/First-Team-Project/";
+                  };
+              </script>
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-full w-full" src="./images/Password-Generator.png">
+              </div>
+              <h2 class="text-xl font-medium title-font text-white mt-5">Password Generator</h2>
+              <p class="text-base leading-relaxed mt-2">Are you tired of coming up with a password that will meet all of the website's requirements? Try this password generator to make new passwords in seconds!</p>
+              <a id="pw-generator" class="text-blue-400 inline-flex items-center mt-3">Try it out!
+                <script type="text/javascript">
+                  document.getElementById("pw-generator").onclick = function () {
+                      location.href = "https://aniesia-schmolesky.github.io/Password-Generator-Homework-3/ ";
+                  };
+              </script>
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
