@@ -33,7 +33,7 @@
         <a class="mr-5 hover:text-gray-900" href="./documents/Resume.pdf">Resume</a>
         <a class="mr-5 hover:text-gray-900" href="#Quiz">JavaScript Quiz</a>
         <a class="mr-5 hover:text-gray-900" href="#Inspiration-Station">Inspiration Station</a>
-        <a class="mr-5 hover:text-gray-900" href="#pw-generator">Password Generator</a>
+        <a class="mr-5 hover:text-gray-900" href="#Geek-Emporium">Password Generator</a>
       </nav>
     </div>
   </header>
@@ -84,6 +84,12 @@
               </div>
               <h2 class="text-xl font-medium title-font text-white mt-5">Java Script Quiz</h2>
               <p class="text-base leading-relaxed mt-2">Test your JavaScript knowledge with this JS quiz. You can use it to practice your own knowledge or to compete with your classmates, either way it's a fun, interactive way to study!</p>
+              <a id="JS-Quiz-GitHub" class="text-blue-400 block-flex items-center mt-3">GitHub Link
+                <script type="text/javascript">
+                  document.getElementById("JS-Quiz-GitHub").onclick = function () {
+                      location.href = "https://github.com/Aniesia-Schmolesky/JS-Quiz-Homework-4";
+                  };
+              </script><br></a>
               <a id="Quiz" class="text-blue-400 inline-flex items-center mt-3">Try it out!
                 <script type="text/javascript">
                   document.getElementById("Quiz").onclick = function () {
@@ -101,6 +107,12 @@
               </div>
               <h2 class="text-xl font-medium title-font text-white mt-5">Inspiration Station</h2>
               <p class="text-base leading-relaxed mt-2">Here is a website to really inspire you when you need it the most, or at the very least will give you a good laugh. Inpiration Station generates images to a variety of quotes. </p>
+              <a id="Inspiration-GitHub" class="text-blue-400 block-flex items-center mt-3">GitHub Link
+                <script type="text/javascript">
+                  document.getElementById("Inspiration-GitHub").onclick = function () {
+                      location.href = "https://github.com/JoeyFitz/First-Team-Project";
+                  };
+              </script><br></a>
               <a id="Inspiration-Station" class="text-blue-400 inline-flex items-center mt-3">Try it out!
                 <script type="text/javascript">
                   document.getElementById("Inspiration-Station").onclick = function () {
@@ -114,14 +126,20 @@
             </div>
             <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
               <div class="rounded-lg h-64 overflow-hidden">
-                <img alt="content" class="object-cover object-center h-full w-full" src="./images/Password-Generator.png">
+                <img alt="content" class="object-cover object-center h-full w-full" src="./images/Geek-Emporium.JPG">
               </div>
-              <h2 class="text-xl font-medium title-font text-white mt-5">Password Generator</h2>
-              <p class="text-base leading-relaxed mt-2">Are you tired of coming up with a password that will meet all of the website's requirements? Try this password generator to make new passwords in seconds!</p>
-              <a id="pw-generator" class="text-blue-400 inline-flex items-center mt-3">Try it out!
+              <h2 class="text-xl font-medium title-font text-white mt-5">Geek Emporium</h2>
+              <p class="text-base leading-relaxed mt-2">Geek Emporium is an ecommerce application where you can buy or list rare collectible items!</p>
+              <a id="Geek-Emporium-GitHub" class="text-blue-400 block-flex items-center mt-3">GitHub Link
                 <script type="text/javascript">
-                  document.getElementById("pw-generator").onclick = function () {
-                      location.href = "https://aniesia-schmolesky.github.io/Password-Generator-Homework-3/ ";
+                  document.getElementById("Geek-Emporium-GitHub").onclick = function () {
+                      location.href = "https://github.com/xBOBOYx/Project-2";
+                  };
+              </script><br></a>
+              <a id="Geek-Emporium" class="text-blue-400 inline-flex items-center mt-3">Try it out!
+                <script type="text/javascript">
+                  document.getElementById("Geek-Emporium").onclick = function () {
+                      location.href = "https://radiant-plateau-99993.herokuapp.com/";
                   };
               </script>
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -133,4 +151,34 @@
         </div>
       </section>
 </body>
+<footer class="text-gray-600 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <svg img="./images/Icon.JPG" fill="none"stroke="currentColor"stroke-linecap="round" stroke-linejoin="round"stroke-width="2" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+          <style>
+      footer {
+          background-color: #6dabdd;
+      }
+    </style>
+  </div>
+  <div>
+    <style>
+       .contact {
+        text-align: center;
+        display: inline;
+        padding: 0px 0px 40px 800px;
+       }
+    </style>
+    
+  </div>
+  <div class="contact">
+  <h1 >AS Web Development</h1><br>
+  <ul >email: aniesiaschmolesky@gmail.com</ul>
+  <ul >phone: (760)-586-5318</ul>
+  </div>
+</footer>
+
+
 </html>
